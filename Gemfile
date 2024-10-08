@@ -78,3 +78,7 @@ group :test do
   gem "selenium-webdriver"
 
 end
+
+# set up image display
+
+gem "cloudinary"

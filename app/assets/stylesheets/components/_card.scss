@@ -1,0 +1,17 @@
+.maincard{
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  width: 20vw;
+}
+
+.maincards{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 50px;
+}
+
+@media(max-width: 768px) {
+  .maincards {
+    grid-template-columns: 1fr;
+  }
+}
