@@ -1,0 +1,17 @@
+.mainfooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+  background-color: #d0d2d3;
+}
+
+.mainfooter div {
+  text-align: center;
+}
+
+.mainfooter a {
+  margin: 0 10px;           
+}
