@@ -10,8 +10,26 @@
   grid-gap: 50px;
 }
 
+.aboutcards{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+}
+
+.aboutcardouter{
+  background-color: #cbe5ff;
+  padding: 20px;
+}
+.aboutcardinner{
+  background-color: #acaeb0;
+  padding: 20px;
+}
+
 @media(max-width: 768px) {
   .maincards {
+    grid-template-columns: 1fr;
+  }
+  .aboutcards {
     grid-template-columns: 1fr;
   }
 }
