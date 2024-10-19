@@ -1,6 +1,7 @@
 class ContactsController < ApplicationController
   skip_before_action :authenticate_user!, only: [ :index ]
   def index
-    @contact = Contact.all
+    @contacts = Contact.all
+    @contact = Contact.new
   end
 end
