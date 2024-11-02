@@ -13,35 +13,35 @@
     </div>
   </div>
 </div>
-<div class=container>
+<div class="container pt-2">
   <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 </div>
-<div class="container">
+<div class="container pb-2">
   <%= simple_form_for @contact, html: { class: 'row g-3' } do |f| %>
-  
+
     <div class="col-md-6">
       <%= f.input :name, label: 'Full Name', input_html: { class: 'form-control' } %>
     </div>
-  
+
     <div class="col-md-6">
       <%= f.input :email, label: 'Email', input_html: { class: 'form-control' } %>
     </div>
-  
+
     <div class="col-md-6">
       <%= f.input :phone, label: 'Phone Number', input_html: { class: 'form-control' } %>
     </div>
-  
+
     <div class="col-md-6">
       <%= f.input :treatment_type, label: 'Type of Treatment', collection: ['Massage', 'Physiotherapy', 'Acupuncture'], prompt: 'Select Treatment', input_html: { class: 'form-select' } %>
     </div>
-  
+
     <div class="col-12">
       <%= f.input :message, as: :text, label: 'Message', input_html: { class: 'form-control', rows: 5 } %>
     </div>
-  
+
     <div class="col-12">
       <%= f.submit 'Submit', class: 'btn btn-primary' %>
     </div>
-  
+
   <% end %>
 </div>
